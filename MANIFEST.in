@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include kare *.css
+recursive-include kare *.csv
+recursive-include kare *.html
+recursive-include kare *.ico
+recursive-include kare *.js
+recursive-include kare *.json
+recursive-include kare *.md
+recursive-include kare *.png
+recursive-include kare *.py
+recursive-include kare *.svg
+recursive-include kare *.txt
+recursive-exclude kare *.pyc
