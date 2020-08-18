@@ -32,7 +32,6 @@ def make_case(frm, target_doc=None, ignore_permissions=False):
 		target.run_method("calculate_taxes_and_totals")
 	def postprocess(frm, target):
 		set_missing_values(frm, target)
-	print "data--------------",frm
 	doclist = get_mapped_doc("Child Master", frm, {
 		"Child Master": {
 			"doctype": "Case",
@@ -63,7 +62,6 @@ def make_counselling(frm, target_doc=None, ignore_permissions=False):
 		#target.run_method("calculate_taxes_and_totals")
 	def postprocess(frm, target):
 		set_missing_values(frm, target)
-	print "data--------------",frm
 	doclist = get_mapped_doc("Child Master", frm, {
 		"Child Master": {
 			"doctype": "Counselling",
